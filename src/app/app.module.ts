@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { BmiComponent } from './bmi/bmi.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
-    BmiComponent
+    BmiComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

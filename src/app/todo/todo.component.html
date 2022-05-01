@@ -1,0 +1,29 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand">My Todo App</a>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="row">
+                <input type="text" [(ngModel)]="todoInput" class="col-8 "  (keyup.enter)="add()" placeholder="Enter a Item">
+                <button class="btn btn-primary col-2 offset-1" (click)="add()">Add</button>
+            </div>
+            
+        <ul class="row mt-5 list-group">
+            <li class="list-group-item" *ngFor="let todo of todoItems;let i = index">
+                <div class="row">
+                    <div class="col-md-10">
+                        {{todo}}
+                    </div>
+                    <button (click)="delete(i)" class="btn col-md-1 offset-1">❌</button>
+                </div>
+
+            </li>
+        </ul>
+
+        </div>
+
+    </div>
+</div>
