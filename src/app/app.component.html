@@ -1,16 +1,2 @@
-<!-- <div class="row">
-  <button class="col-1 p-2 btn btn-primary" (click)="decrease()" >-</button>
-  <h1 class="col-1 text-center" >{{counter}}</h1>
-  <button class="col-1 p-2 btn btn-primary" (click)="increase()" >+</button>
-</div> -->
-
-<div class="row mt-5">
-  <div class="col-md-6 p-5">
-    <input [(ngModel)]="height" class="form-control m-2" type="text" placeholder="Enter Height in cms">
-    <input [(ngModel)]="weight" class="form-control m-2" type="text" placeholder="Enter Weight in kg">
-  </div>
-  
-  <div class="col-md-12">
-    <h1>Your BMI is {{weight /( ( height  / 100 ) * ( height  / 100 )) | number}}</h1>
-  </div>
-</div>
+<app-counter></app-counter>
+<app-bmi></app-bmi>

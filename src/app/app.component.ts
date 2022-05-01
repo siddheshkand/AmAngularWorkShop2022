@@ -8,18 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'sample';
 
-  counter = 0;
 
-  increase(){
-    this.counter = this.counter + 1;
-  }
-
-  decrease(){
-    this.counter = this.counter - 1;
-  }
-
-  height = 0;
-  weight = 0;
 
   
 }
